@@ -1,0 +1,57 @@
+/* @custom-media --blowup (min-width: 1500px); */
+@custom-media --desktop (min-width: 801px);
+@custom-media --tablet (min-width: 601px) and (max-width: 800px);
+@custom-media --mobile (max-width: 600px);
+
+:root {
+
+  /* Colors */
+  --color-primary: #FFA85F;
+  --color-white: #FFFFFF;
+  --color-black: #333333;
+  --color-gray: #888888;
+  --color-lightgray: #FAFAFA;
+
+  /* Typography */
+  --font-family-jp: Helvetica, "Noto Sans Japanese", "ヒラギノ角ゴ ProN W3";
+  --font-family-sans: 'Hind Siliguri', Helvetica, Arial, sans-serif;
+
+  /* Spacing */
+  --spacing-unit: 8px;
+
+  /* Beyond max-width, content won't expand any further */
+  --desktop-max-width: 1280px;
+
+  /* Grid */
+  /* --grid-colums: 12;
+  --grid-margin: calc(100vw / (var(--grid-colums) + 2));
+
+  --grid-inner-column-width: 1fr;
+  --grid-outer-column-width: var(--grid-margin); */
+
+  --grid-template-column-width: minmax(200px, 46%);
+  --grid-column-gap: 8%;
+
+  /* Typography */
+  --t--alpha-font-size: 5.4em;
+  --t--beta-font-size: 2.8em;
+  --t--gamma-font-size: 2.4em;
+  --t--delta-font-size: 2.0em;
+  --t--epsilon-font-size: 1.8em;
+  --t--zeta-font-size: 1.6em;
+  --t--eta-font-size: 1.4em;
+
+}
+
+@media (--tablet), (--mobile) {
+  :root {
+    /* Typography */
+    --t--alpha-font-size: 5.4em;
+    --t--beta-font-size: 2.8em;
+    --t--gamma-font-size: 2.4em;
+    --t--delta-font-size: 2.0em;
+    --t--epsilon-font-size: 1.8em;
+    --t--zeta-font-size: 1.6em;
+    --t--eta-font-size: 1.4em;
+  }
+}
