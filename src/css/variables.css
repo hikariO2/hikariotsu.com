@@ -6,52 +6,68 @@
 :root {
 
   /* Colors */
-  --color-primary: #FFA85F;
   --color-white: #FFFFFF;
-  --color-black: #333333;
-  --color-gray: #888888;
-  --color-lightgray: #FAFAFA;
+  --color-black: #000000;
+  --color-gray: #666666;
 
   /* Typography */
   --font-family-jp: Helvetica, "Noto Sans Japanese", "ヒラギノ角ゴ ProN W3";
-  --font-family-sans: 'Hind Siliguri', Helvetica, Arial, sans-serif;
+  --font-family-sans: 'Manrope', Helvetica, Arial, sans-serif;
 
   /* Spacing */
   --spacing-unit: 8px;
 
   /* Beyond max-width, content won't expand any further */
-  --desktop-max-width: 1280px;
+  --desktop-max-width: 1400px;
 
   /* Grid */
-  /* --grid-colums: 12;
-  --grid-margin: calc(100vw / (var(--grid-colums) + 2));
+  --grid-colums: 11;
+  --grid-margin: calc(3 * var(--spacing-unit));
 
   --grid-inner-column-width: 1fr;
-  --grid-outer-column-width: var(--grid-margin); */
+  --grid-outer-column-width: var(--grid-margin);
 
   --grid-template-column-width: minmax(200px, 46%);
   --grid-column-gap: 8%;
 
   /* Typography */
-  --t--alpha-font-size: 5.4em;
-  --t--beta-font-size: 2.8em;
-  --t--gamma-font-size: 2.4em;
-  --t--delta-font-size: 2.0em;
-  --t--epsilon-font-size: 1.8em;
-  --t--zeta-font-size: 1.6em;
-  --t--eta-font-size: 1.4em;
-
+  --t--alpha-font-size: 7.75em;
+  --t--alpha-jp-font-size: 7em;
+  --t--beta-font-size: 4.0625em;
+  --t--gamma-font-size: 23.125em;
+  --t--delta-font-size: 2.25em;
+  --t--epsilon-font-size: 1.75em;
+  --t--epsilon-jp-font-size: 1.5625em;
+  --t--zeta-font-size: 1.375em;
+  --t--zeta-jp-font-size: 1.1875em;
+  --t--eta-font-size: 1.125em;
 }
 
 @media (--tablet), (--mobile) {
   :root {
     /* Typography */
-    --t--alpha-font-size: 5.4em;
-    --t--beta-font-size: 2.8em;
-    --t--gamma-font-size: 2.4em;
-    --t--delta-font-size: 2.0em;
-    --t--epsilon-font-size: 1.8em;
-    --t--zeta-font-size: 1.6em;
+    --t--alpha-font-size: 4.375em;
+    --t--alpha-jp-font-size: 4.0625em;
+    --t--beta-font-size: 2.5em;
+    --t--gamma-font-size: 2.25em;
+    --t--delta-font-size: 1.875em;
+    --t--epsilon-font-size: 1.4em;
+    --t--epsilon-jp-font-size: 1.3125em;
+    --t--zeta-font-size: 1.25em;
+    --t--zeta-jp-font-size: 1.0625em;
     --t--eta-font-size: 1.4em;
+  }
+}
+
+@@media (--tablet) {
+  :root {
+    --grid-colums: 7;
+  }
+}
+
+@@media (--mobile) {
+  :root {
+    --grid-colums: 5;
+    --grid-margin: calc(2 * var(--spacing-unit));
   }
 }

@@ -9,8 +9,13 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
 import "./layout.css"
+
+//Google fonts 400: Regular, 500: Medium
+import "@fontsource/manrope/400.css"
+import "@fontsource/manrope/500.css"
+import "@fontsource/noto-sans-jp/400.css"
+import "@fontsource/noto-sans-jp/500.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -18,6 +23,7 @@ const Layout = ({ children }) => {
       site {
         siteMetadata {
           title
+          description
         }
       }
     }
@@ -25,13 +31,8 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
+        className=""
       >
         <main>{children}</main>
         <footer style={{

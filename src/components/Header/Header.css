@@ -1,0 +1,25 @@
+.header {
+  padding-top: calc(var(--spacing-unit) * 5);
+
+}
+
+.header_logo {
+  grid-column: 2/4;
+}
+
+.header_title {
+  grid-column: 4/9;
+  display: inline;
+}
+
+.header-title_first,
+.header-title_second {
+  display: inline;
+}
+
+.header-titile_icon {
+
+}
+.header_nav {
+  grid-column: -4/-2;
+}

@@ -1,0 +1,12 @@
+.grid {
+  display: grid;
+  grid-template-columns:
+    var(--grid-outer-column-width)
+    repeat(var(--grid-colums), var(--grid-inner-column-width))
+    var(--grid-outer-column-width);
+  grid-auto-flow: column;
+}
+
+.grid_inner {
+  grid-column: 2/-2;
+}

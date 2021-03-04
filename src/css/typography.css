@@ -2,11 +2,147 @@
 body {
   color: var(--color-black);
   font-family: var(--font-family-sans);
-  font-family: var(--font-family-jp);
   font-size: 62.5%;
 }
-p {
-  line-height: 1.4;
-  letter-spacing: .4px;
-  font-size: 2.4em;
+
+.t--alpha {
+  font-family: var(--font-family-sans);
+  font-size: var(----t--alpha-font-size);
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -1.4px;
+}
+
+.t--beta {
+  font-family: var(--font-family-sans);
+  font-size: var(--t--beta-font-size);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 86px;
+  letter-spacing: -0.6px;
+}
+.t--gamma{
+  font-family: var(--font-family-sans);
+  font-size: var(--t--gamma-font-size);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 66px;
+  letter-spacing: -0.6px;
+}
+
+.t--delta {
+  font-family: var(--font-family-sans);
+  font-size: var(--t--delta-font-size);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 48px;
+}
+
+.t--epsilon {
+  font-family: var(--font-family-sans);
+  font-size: var(--t--epsilon-font-size);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.45;
+  letter-spacing: 0.2px;
+}
+
+.t--zeta {
+  font-family: var(--font-family-sans);
+  font-size: var(--t--zeta-font-size);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+}
+.t--eta {
+  font-family: var(--font-family-sans);
+  font-size: var(----t--eta-font-size);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0.3px;
+}
+
+/* Japanease Font */
+.t--alpha-jp {
+  font-family: var(--font-family-jp);
+  font-size: var(--t--alpha-jp-font-size);
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -2px;
+}
+
+.t--epsilon-jp {
+  font-family: var(--font-family-jp);
+  font-size: var(--t--epsilon-jp-font-size);
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+
+.t--zeta-jp {
+  font-family: var(--font-family-jp);
+  font-size: var(--t--zeta-jp-font-size);
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+}
+
+@media (--tablet), (--mobile) {
+  .t--alpha {
+    font-size: 70px;
+    line-height: 96px;
+    letter-spacing: -0.6px;
+  }
+
+  .t--beta {
+    font-size: 40px;
+    line-height: 53px;
+    letter-spacing: -0.4px;
+  }
+  .t--gamma{
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -0.2px;
+  }
+
+  .t--delta {
+    font-size: 30px ;
+    line-height: 40px;
+    letter-spacing: 0.1px;
+  }
+
+  .t--epsilon {
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: 0.2px;
+  }
+
+  .t--zeta {
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0.2px;
+  }
+  .t--eta {
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+  }
+
+  /* Japanease Font */
+  .t--alpha-jp {
+    font-size: 65px;
+    letter-spacing: -1.4px;
+  }
+
+  .t--epsilon-jp {
+    font-size: 21px;
+    letter-spacing: 0.2px;
+  }
+
+  .t--zeta-jp {
+    font-size: 17px;
+    letter-spacing: 0.8px;
+  }
 }

@@ -1,0 +1,13 @@
+.nav_item {
+  margin-bottom: calc(var(--spacing-unit) * 1.25);
+}
+
+.nav-item_link {
+  transition: border-color 0.3s ease-out;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-item_link:hover {
+  border-color: var(--color-black);
+  /* color: var(--color-gray); */
+}
