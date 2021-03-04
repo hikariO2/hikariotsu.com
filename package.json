@@ -7,6 +7,7 @@
   "dependencies": {
     "@fontsource/manrope": "^4.2.1",
     "@fontsource/noto-sans-jp": "^4.2.1",
+    "eslint-config-prettier": "^8.1.0",
     "gatsby": "^2.26.1",
     "gatsby-image": "^2.5.0",
     "gatsby-plugin-manifest": "^2.6.1",
@@ -21,7 +22,11 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
+    "eslint": "^6.8.0",
     "eslint-config-react-app": "^5.2.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-webpack-plugin": "^2.5.2",
+    "gatsby-plugin-eslint": "^3.0.0",
     "prettier": "2.2.1"
   },
   "keywords": [
@@ -35,7 +40,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'"
   },
   "repository": {
     "type": "git",
