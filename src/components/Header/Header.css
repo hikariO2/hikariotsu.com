@@ -23,3 +23,24 @@
 .header_nav {
   grid-column: -4/-2;
 }
+
+@media only screen and (max-width: 600px) {
+  .header {
+    padding-top: 0;
+    height: 66px;
+    align-items: center;
+  }
+  .header_nav,
+  .header_title {
+      display: none;
+  }
+
+  .header_logo {
+    grid-column: 2 / span 5;
+  }
+
+  .header_hamburger {
+    grid-column: span 2 / -2;
+    text-align: right;
+  }
+}

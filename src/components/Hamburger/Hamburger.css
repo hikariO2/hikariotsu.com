@@ -1,0 +1,79 @@
+.hamburger-button {
+    position: fixed;
+    text-decoration: none;
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+  }
+  
+  
+  .hamburger {
+    position: relative;
+    width: calc(var(--spacing-unit) * 6);
+    height: calc(var(--spacing-unit) * 6);
+    margin: auto;
+    border-radius: 50%;
+    /* border: 1px solid var(--color-black); */
+  }
+
+.hamburger-line {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: calc(var(--spacing-unit) * 3);
+    height: 2px;
+    background-color: var(--color-black);
+}
+.hamburger-line:before,
+.hamburger-line:after {
+    position: absolute;
+    display: block;
+    width: 90%;
+    height: 100%;
+    background-color: inherit;
+    content: '';
+    transition: inherit;
+}
+.hamburger-line:before {
+    top: -8px;
+}
+.hamburger-line:after {
+    top: 8px;
+}
+.hamburger[aria-expanded="true"] .hamburger-line {
+    background-color: transparent;
+    transition: all .35s ease-in-out;
+}
+
+.hamburger[aria-expanded="true"] .hamburger-line:before,
+.hamburger[aria-expanded="true"] .hamburger-line:after {
+    top: 0;
+    transform: rotate(-45deg);
+    background-color: var(--color-black);
+}
+.hamburger[aria-expanded="true"] .hamburger-line:before {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.hamburger-hidden-text {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%); 
+}
+@media only screen and (max-width: 600px) {
+    .hamburger-button {
+        display: inline-block;
+    }
+}
