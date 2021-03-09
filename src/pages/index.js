@@ -6,6 +6,7 @@ import Img from 'gatsby-image';
 import { useStaticQuery, graphql } from "gatsby"
 import { Kicker } from "../components/Kicker/Kicker"
 import { Teaser } from "../components/Teaser/Teaser"
+import { TeaserList } from '../components/TeaserList/TeaserList';
 
 export default function Home() {
   const data = useStaticQuery(graphql`
@@ -39,9 +40,22 @@ export default function Home() {
       image: data.cover1.childImageSharp.fluid,
     },
     {
-      title: "Dasyk Sharing App",
+      title: "Boxing App",
       category: "UI/UX Design",
-      date: 2020,
+      date: 2018,
+      filename: "bag.jpg",
+      alt: "bag image",
+      url: "/about/",
+      image: data.cover1.childImageSharp.fluid,
+    },
+    {
+      title: "Kere Foundation Website",
+      category: "UI/UX Design",
+      date: 2018,
+      filename: "bag.jpg",
+      alt: "bag image",
+      url: "/about/",
+      image: data.cover1.childImageSharp.fluid,
     },
   ]
   return (
@@ -51,17 +65,7 @@ export default function Home() {
       description=""
       />
       <Kicker homeOnly={true} titleEn="Hallo, Servus, " titleJp="こんにちは👋"/>
-      <Teaser 
-        title={projects[0].title} 
-        category={projects[0].category}
-        date={projects[0].date}
-        filename={projects[0].filename}
-        to={projects[0].url}
-        image={<Img
-          fluid={projects[0].image}
-          alt={projects[0].alt}
-        />}
-      />
+      <TeaserList items={projects}/>
       <div className="home" >
         <Link to="/about/">Go to about page</Link>
         <Link to="/case/">Go to case page</Link>

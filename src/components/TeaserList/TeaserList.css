@@ -1,0 +1,20 @@
+.teaserList {
+    display: grid;
+    grid-template-columns: minmax(200px, 48%) minmax(200px, 48%);
+    grid-column-gap: 4%;
+    grid-row-gap: calc(var(--spacing-unit) * 12);
+}
+
+.teaserList_item {
+    
+}
+
+@media only screen and (max-width: 740px) {
+    .teaserList {
+        display: block;
+    }
+
+    .teaserList_item {
+        margin-bottom: calc(var(--spacing-unit) * 9);
+    }
+}
