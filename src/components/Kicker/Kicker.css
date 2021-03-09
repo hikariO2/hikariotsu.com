@@ -1,0 +1,29 @@
+.kicker {
+    height: 30vh;
+}
+.kicker_content {
+    grid-column: 4/9;
+    display: inline;
+  }
+  
+  .kicker-content_en,
+  .kicker-content_jp {
+    display: inline;
+  }
+
+.kicker-content_icon {
+
+}
+/*--tablet*/
+@media only screen and (max-width: 1000px) { 
+  .kicker_content {
+    grid-column: 5/9;
+  }
+}
+/*--mobile*/
+@media only screen and (max-width: 740px) { 
+  .kicker_content {
+    grid-column: 2/-2;
+  }
+}
+
