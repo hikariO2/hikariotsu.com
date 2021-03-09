@@ -1,7 +1,7 @@
 /* @custom-media --blowup (min-width: 1500px); */
-@custom-media --desktop (min-width: 801px);
-@custom-media --tablet (min-width: 601px) and (max-width: 800px);
-@custom-media --mobile (max-width: 600px);
+@custom-media --desktop (max-width: 1760px);
+@custom-media --tablet (max-width: 1000px);
+@custom-media --mobile (max-width: 740px);
 
 :root {
 
@@ -43,7 +43,7 @@
   --t--eta-font-size: 1.125em;
 }
 
-@media (--tablet), (--mobile) {
+@media (--mobile) {
   :root {
     /* Typography */
     --t--alpha-font-size: 4.375em;
@@ -59,13 +59,13 @@
   }
 }
 
-@@media (--tablet) {
+@media (--tablet) {
   :root {
     --grid-colums: 7;
   }
 }
 
-@@media (--mobile) {
+@media (--mobile) {
   :root {
     --grid-colums: 5;
     --grid-margin: calc(2 * var(--spacing-unit));

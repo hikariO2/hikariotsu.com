@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import "./layout.css"
+import { Header } from "../components/Header/Header"
 
 //Google fonts 400: Regular, 500: Medium
 import "@fontsource/manrope/400.css"
@@ -32,6 +33,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <div>
+        <Header />
         <main>{children}</main>
         <footer style={{
           marginTop: `2rem`

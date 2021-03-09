@@ -1,5 +1,9 @@
 .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
   padding-top: calc(var(--spacing-unit) * 5);
+  z-index:999;
 
 }
 
@@ -7,32 +11,18 @@
   grid-column: 2/4;
 }
 
-.header_title {
-  grid-column: 4/9;
-  display: inline;
-}
-
-.header-title_first,
-.header-title_second {
-  display: inline;
-}
-
-.header-titile_icon {
-
-}
 .header_nav {
   grid-column: -4/-2;
 }
-
-@media only screen and (max-width: 600px) {
+/*--mobile*/
+@media only screen and (max-width: 740px) {
   .header {
     padding-top: 0;
     height: 66px;
     align-items: center;
   }
-  .header_nav,
-  .header_title {
-      display: none;
+  .header_nav {
+    display: none;
   }
 
   .header_logo {

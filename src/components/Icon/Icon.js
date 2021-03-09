@@ -1,5 +1,5 @@
 import React from "react";
-import { buildClassNames } from "../../pages/helpers";
+import { buildClassNames } from "../../helpers";
 import "./Icon.css";
 
 

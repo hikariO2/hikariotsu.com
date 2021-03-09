@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
 import Image from "../components/image"
-import { Header } from "../components/Header/Header"
+import { Kicker } from "../components/Kicker/Kicker"
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
       title="Hikari Otsu - Digital Designer"
       description=""
       />
-      <Header homeOnly={true} titleEn="Hallo, Servus, " titleJp="こんにちは👋"/>
+      <Kicker homeOnly={true} titleEn="Hallo, Servus, " titleJp="こんにちは👋"/>
       <div className="home" >
         <Image />
         <Link to="/about/">Go to about page</Link>
