@@ -7,7 +7,7 @@ body {
 
 .t--alpha {
   font-family: var(--font-family-sans);
-  font-size: var(----t--alpha-font-size);
+  font-size: var(--t--alpha-font-size);
   font-style: normal;
   font-weight: 500;
   letter-spacing: -1.4px;
@@ -57,7 +57,7 @@ body {
 }
 .t--eta {
   font-family: var(--font-family-sans);
-  font-size: var(----t--eta-font-size);
+  font-size: var(--t--eta-font-size);
   font-style: normal;
   font-weight: 500;
   line-height: 25px;
@@ -89,7 +89,7 @@ body {
   letter-spacing: 0.8px;
 }
 
-@media (--tablet), (--mobile) {
+@media only screen and (max-width: 740px) {
   .t--alpha {
     font-size: 70px;
     line-height: 96px;

@@ -1,7 +1,7 @@
 /* @custom-media --blowup (min-width: 1500px); */
-@custom-media --desktop (max-width: 1760px);
+/* @custom-media --desktop (max-width: 1760px);
 @custom-media --tablet (max-width: 1000px);
-@custom-media --mobile (max-width: 740px);
+@custom-media --mobile (max-width: 740px); */
 
 :root {
 
