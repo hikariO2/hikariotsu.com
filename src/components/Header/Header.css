@@ -12,10 +12,14 @@
 }
 
 .header_nav {
-  grid-column: -4/-2;
+  grid-column: span 1 / -2;
 }
+@media only screen and (max-width: 1000px){
+  
+}
+
 /*--mobile*/
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 700px) {
   .header {
     padding-top: 0;
     height: 66px;
@@ -23,10 +27,6 @@
   }
   .header_nav {
     display: none;
-  }
-
-  .header_logo {
-    grid-column: 2 / span 5;
   }
 
   .header_hamburger {

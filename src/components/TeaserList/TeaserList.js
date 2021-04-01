@@ -11,7 +11,7 @@ export const TeaserList = ({
   
   return (
     <div className="grid">
-      <div className="teaserList grid_inner">
+      <div className="teaserList">
         {items.map((item, index) => {
           return (
             <div className="teaserList_item">

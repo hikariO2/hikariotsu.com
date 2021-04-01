@@ -1,7 +1,7 @@
 /* @custom-media --blowup (min-width: 1500px); */
 /* @custom-media --desktop (max-width: 1760px);
 @custom-media --tablet (max-width: 1000px);
-@custom-media --mobile (max-width: 740px); */
+@custom-media --mobile (max-width: 700px); */
 
 :root {
 
@@ -43,11 +43,17 @@
   --t--eta-font-size: 1.125em;
 }
 
-@media (--mobile) {
+@media only screen and (max-width: 1000px) { 
+  :root {
+    --grid-colums: 7;
+  }
+}
+
+@media only screen and (max-width: 700px) { 
   :root {
     /* Typography */
     --t--alpha-font-size: 4.375em;
-    --t--alpha-jp-font-size: 4.0625em;
+    --t--alpha-jp-font-size: 3.5em;
     --t--beta-font-size: 2.5em;
     --t--gamma-font-size: 2.25em;
     --t--delta-font-size: 1.875em;
@@ -56,17 +62,7 @@
     --t--zeta-font-size: 1.25em;
     --t--zeta-jp-font-size: 1.0625em;
     --t--eta-font-size: 1.4em;
-  }
-}
 
-@media (--tablet) {
-  :root {
-    --grid-colums: 7;
-  }
-}
-
-@media (--mobile) {
-  :root {
     --grid-colums: 5;
     --grid-margin: calc(2 * var(--spacing-unit));
   }

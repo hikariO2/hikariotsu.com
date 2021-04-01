@@ -5,8 +5,8 @@ import Layout from "../components/layout"
 import Img from 'gatsby-image';
 import { useStaticQuery, graphql } from "gatsby"
 import { Kicker } from "../components/Kicker/Kicker"
-import { Teaser } from "../components/Teaser/Teaser"
 import { TeaserList } from '../components/TeaserList/TeaserList';
+import { ScrolledText } from '../components/ScrolledText/ScrolledText';
 
 export default function Home() {
   const data = useStaticQuery(graphql`
@@ -66,10 +66,7 @@ export default function Home() {
       />
       <Kicker homeOnly={true} titleEn="Hallo, Servus, " titleJp="こんにちは👋"/>
       <TeaserList items={projects}/>
-      <div className="home" >
-        <Link to="/about/">Go to about page</Link>
-        <Link to="/case/">Go to case page</Link>
-      </div>
+      <ScrolledText />
     </Layout>
   );
 }

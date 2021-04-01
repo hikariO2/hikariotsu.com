@@ -1,0 +1,31 @@
+.scrolled-text {
+    display: inline-block;
+    padding-left: 100%;
+    margin-top: calc(var(--spacing-unit) * 18);
+    margin-bottom: calc(var(--spacing-unit) * 12);
+    white-space: nowrap;
+    animation: scrollAnime 24s linear infinite;
+}
+
+.scrolled-text_item {
+    display: inline-block;
+    margin-right: calc(var(--spacing-unit) * 10);
+}
+
+
+@media only screen and (max-width: 700px) {
+    .scrolled-text {
+        margin-top: calc(var(--spacing-unit) * 10);
+        margin-bottom: calc(var(--spacing-unit) * 8);
+        animation: scrollAnime 24s linear infinite;
+    }
+    .scrolled-text_item {
+        margin-right: calc(var(--spacing-unit) * 5);
+    }
+}
+
+
+@keyframes scrollAnime{
+    0% {transform: translateX(0)}
+  100% {transform: translateX(-100%)}
+}
