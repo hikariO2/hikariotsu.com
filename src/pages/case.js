@@ -11,8 +11,6 @@ const Case = () => (
     description=""
     />
     <Kicker caseStudyOnly={true} url="/about"/>
-    <p className="hero-text pd-top16">I am a UXD Student and Product designer born and raised in Japan</p>
-    <Link to="/">To Home</Link>
   </Layout>
 )
 
