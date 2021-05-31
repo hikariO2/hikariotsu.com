@@ -15,7 +15,7 @@ export const Kicker = ({
      return (
       <div className="kicker grid">
        <div className="kicker_content kicker-content">
-        <Link to="/work">
+        <Link to={url}>
           <span className="kicker-content_icon"><ArrowLeft /></span>
           <p className="kicker-content_en t--epsilon">Back to Overview</p>
         </Link>

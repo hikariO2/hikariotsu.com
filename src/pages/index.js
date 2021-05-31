@@ -36,7 +36,7 @@ export default function Home() {
       date: 2018,
       filename: "bag.jpg",
       alt: "bag image",
-      url: "/about/",
+      url: "/case/",
       image: data.cover1.childImageSharp.fluid,
     },
     {
@@ -45,7 +45,7 @@ export default function Home() {
       date: 2018,
       filename: "bag.jpg",
       alt: "bag image",
-      url: "/about/",
+      url: "/case/",
       image: data.cover1.childImageSharp.fluid,
     },
     {
@@ -54,7 +54,7 @@ export default function Home() {
       date: 2018,
       filename: "bag.jpg",
       alt: "bag image",
-      url: "/about/",
+      url: "/case/",
       image: data.cover1.childImageSharp.fluid,
     },
   ]
